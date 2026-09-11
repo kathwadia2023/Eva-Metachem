@@ -1,0 +1,68 @@
+.about-hero {
+  background: var(--navy-950);
+  color: var(--white);
+  padding-block: clamp(48px, 8vw, 96px);
+}
+.about-hero h1 {
+  font-size: var(--step-4);
+  margin-top: 14px;
+  max-width: 20ch;
+  color: var(--white);
+}
+.about-hero p {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: var(--step-1);
+  max-width: 62ch;
+}
+
+.about-positioning {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
+.about-positioning h2 { font-size: var(--step-3); color: var(--navy-900); margin-top: 8px; max-width: 22ch; }
+.about-positioning p { margin-top: 16px; color: var(--ink-soft); max-width: 56ch; }
+
+.about-strengths { border: 1px solid var(--line); padding: 26px; }
+.about-strengths ul { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.about-strengths li {
+  font-size: 0.92rem;
+  padding-left: 20px;
+  position: relative;
+}
+.about-strengths li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  background: var(--orange-500);
+}
+
+.about-why-title { font-size: var(--step-3); color: var(--navy-900); margin: 10px 0 32px; max-width: 24ch; }
+
+.about-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+.about-contact h2 { font-size: var(--step-3); color: var(--navy-900); margin-top: 8px; max-width: 22ch; }
+.about-contact p { margin-top: 14px; color: var(--ink-soft); max-width: 46ch; }
+.about-contact__card {
+  border: 1px solid var(--line-strong);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.about-contact__card div { display: flex; flex-direction: column; gap: 4px; }
+.about-contact__card span { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); text-transform: uppercase; }
+.about-contact__card strong { color: var(--navy-900); font-size: 1rem; }
+.about-contact__card .btn { align-self: flex-start; margin-top: 6px; }
+
+@media (min-width: 860px) {
+  .about-positioning { grid-template-columns: 1.4fr 1fr; }
+  .about-contact { grid-template-columns: 1.3fr 1fr; }
+}

@@ -1,0 +1,9 @@
+.legal-page {
+  padding-block: clamp(48px, 7vw, 88px);
+}
+.legal-page h1 { font-size: var(--step-4); color: var(--navy-900); margin-bottom: 8px; }
+.legal-page__updated { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-soft); }
+.legal-page__body { margin-top: 32px; max-width: 68ch; display: flex; flex-direction: column; gap: 22px; }
+.legal-page__body h2 { font-size: var(--step-1); color: var(--navy-900); margin-top: 8px; }
+.legal-page__body p, .legal-page__body li { color: var(--ink-soft); font-size: 0.95rem; }
+.legal-page__body ul { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
